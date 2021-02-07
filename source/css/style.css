@@ -30,21 +30,21 @@ input[type="radio"].visually-hidden {
   font-weight: 300;
   font-style: normal;
   font-display: swap;
-  src: url("../../fonts/opensanslight.woff2") format("woff2"), url("../../fonts/opensanslight.woff") format("woff"), url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+  src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff"), url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 }
 @font-face {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url("../../fonts/opensans.woff2") format("woff2"), url("../../fonts/opensans.woff") format("woff"), url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff"), url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 }
 @font-face {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: url("../../fonts/opensansbold.woff2") format("woff2"), url("../../fonts/opensansbold.woff") format("woff"), url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff"), url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 }
 .page {
   font-size: 14px;
@@ -59,21 +59,21 @@ input[type="radio"].visually-hidden {
 }
 @media (max-width: 320px) {
   .page-header {
-    background-image: url(../../img/bg-back-mobile@1x.jpg);
+    background-image: url(../img/bg-back-mobile@1x.jpg);
     background-position: center top;
     background-repeat: no-repeat;
   }
 }
 @media (min-width: 321px) {
   .page-header {
-    background-image: url(../../img/bg-back-tablet@1x.jpg);
+    background-image: url(../img/bg-back-tablet@1x.jpg);
     background-position: center top;
     background-repeat: no-repeat;
   }
 }
 @media (min-width: 1200px) {
   .page-header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../img/bg-back-desktop@1x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/bg-back-desktop@1x.jpg);
     background-position: center top;
     background-repeat: no-repeat;
   }
@@ -129,28 +129,28 @@ input[type="radio"].visually-hidden {
   width: 74px;
   height: 23px;
   cursor: pointer;
-  background-image: url(../../img/logo-pink-white-mobile.svg);
+  background-image: url(../img/logo-pink-white-mobile.svg);
 }
 .main-nav__logo:hover,
 .main-nav__logo:focus {
-  background-image: url(../../img/logo-pink-blue-mobile.svg);
+  background-image: url(../img/logo-pink-blue-mobile.svg);
 }
 .main-nav__logo:active {
-  background-image: url(../../img/logo-pink-white-mobile.svg);
+  background-image: url(../img/logo-pink-white-mobile.svg);
   opacity: 0.3;
 }
 @media (min-width: 660px) {
   .main-nav__logo {
     width: 146px;
     height: 40px;
-    background-image: url(../../img/logo-pink-white-tablet.svg);
+    background-image: url(../img/logo-pink-white-tablet.svg);
   }
   .main-nav__logo:hover,
   .main-nav__logo:focus {
-    background-image: url(../../img/logo-pink-blue-tablet.svg);
+    background-image: url(../img/logo-pink-blue-tablet.svg);
   }
   .main-nav__logo:active {
-    background-image: url(../../img/logo-pink-white-tablet.svg);
+    background-image: url(../img/logo-pink-white-tablet.svg);
     opacity: 0.3;
   }
 }
@@ -158,14 +158,14 @@ input[type="radio"].visually-hidden {
   .main-nav__logo {
     width: 146px;
     height: 40px;
-    background-image: url(../../img/logo-pink-white-desktop.svg);
+    background-image: url(../img/logo-pink-white-desktop.svg);
   }
   .main-nav__logo:hover,
   .main-nav__logo:focus {
-    background-image: url(../../img/logo-pink-blue-desktop.svg);
+    background-image: url(../img/logo-pink-blue-desktop.svg);
   }
   .main-nav__logo:active {
-    background-image: url(../../img/logo-pink-white-desktop.svg);
+    background-image: url(../img/logo-pink-white-desktop.svg);
     opacity: 0.3;
   }
 }
@@ -326,28 +326,28 @@ input[type="radio"].visually-hidden {
 }
 @media (max-width: 320px) {
   .promo {
-    background-image: url(../../img/bg-back-mobile@1x.jpg);
+    background-image: url(../img/bg-back-mobile@1x.jpg);
     background-position: center -66px;
     background-repeat: no-repeat;
   }
 }
 @media (min-width: 321px) {
   .promo {
-    background-image: url(../../img/bg-back-tablet@1x.jpg);
+    background-image: url(../img/bg-back-tablet@1x.jpg);
     background-position: center -76px;
     background-repeat: no-repeat;
   }
 }
 @media (min-width: 660px) {
   .promo {
-    background-image: url(../../img/bg-back-tablet@1x.jpg);
+    background-image: url(../img/bg-back-tablet@1x.jpg);
     background-position: center -110px;
     background-repeat: no-repeat;
   }
 }
 @media (min-width: 1200px) {
   .promo {
-    background-image: url(../../img/bg-back-desktop@1x.jpg);
+    background-image: url(../img/bg-back-desktop@1x.jpg);
     background-position: center -110px;
     background-repeat: no-repeat;
   }
@@ -385,7 +385,7 @@ input[type="radio"].visually-hidden {
   left: -20px;
   width: 258px;
   height: 286px;
-  background-image: url(../../img/iphone-hand-mobile@1x.png);
+  background-image: url(../img/iphone-hand-mobile@1x.png);
 }
 @media (min-width: 660px) {
   .promo__wrap::before {
@@ -394,7 +394,7 @@ input[type="radio"].visually-hidden {
     width: 700px;
     height: 545px;
     z-index: 0;
-    background-image: url(../../img/iphone-hand-tablet@1x.png);
+    background-image: url(../img/iphone-hand-tablet@1x.png);
   }
 }
 @media (min-width: 1200px) {
@@ -403,7 +403,7 @@ input[type="radio"].visually-hidden {
     left: 50px;
     width: 1050px;
     height: 645px;
-    background-image: url(../../img/iphone-hand-desktop@1x.png);
+    background-image: url(../img/iphone-hand-desktop@1x.png);
   }
 }
 .promo__title {
