@@ -1,0 +1,126 @@
+.popups__wrapper  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+
+  width: 280px;
+
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width)  {
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width)  {
+    width: 940px;
+
+    padding: 0 10px;
+  }
+}
+
+.popup  {
+  display: none;
+
+  position: absolute;
+
+  box-sizing: border-box;
+
+  width: 320px;
+
+  padding: 44px 0 0;
+
+  background-color: #ffffff;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15);
+}
+
+.popup--show  {
+  display: block;
+}
+
+.popup--failure  {
+  top: -1287px;
+}
+
+.popup--success  {
+  top: -815px;
+}
+
+.popup__title  {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+
+  margin: 0;
+  margin-bottom: 37px;
+  padding: 0;
+}
+
+.popup__text  {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+
+  color: #283645;
+}
+
+.popup__text--inner  {
+  margin-bottom: 41px;
+}
+
+.popup__bg  {
+  display: flex;
+  justify-content: center;
+}
+
+.popup__bg--inner  {
+  background-color: #F2F2F2;
+}
+
+.popup__button  {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+
+  box-sizing: border-box;
+
+  width: 280px;
+
+  margin-bottom: 52px;
+  padding: 10px;
+
+  color: #ffffff;
+  background-color: #2AAB6D;
+  border: none;
+  border-radius: 3px;
+
+  cursor: pointer;
+  outline: none;
+
+  transition: 0.3s;
+
+  &:hover,
+  &:focus  {
+    background-color: #1C9B5E;
+
+    transition: 0.3s;
+  }
+
+  &:active  {
+    color: rgba(255, 255, 255, 0.3);
+
+    transition: 0.3s;
+  }
+}
+
+.popup__button--inner  {
+  margin-top: 52px;
+}
