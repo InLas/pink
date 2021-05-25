@@ -30,10 +30,22 @@
 
   width: 320px;
 
-  padding: 44px 0 0;
+  padding: 38px 0 50px;
 
   background-color: #ffffff;
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15);
+
+  @media (min-width: @tablet-width)  {
+    width: 460px;
+
+    padding: 41px 0 50px;
+  }
+
+  @media (min-width: @desktop-width)  {
+    width: 780px;
+
+    padding: 41px 0 0;
+}
 }
 
 .popup--show  {
@@ -41,11 +53,29 @@
 }
 
 .popup--failure  {
-  top: -1287px;
+  top: -1289px;
+
+  @media (min-width: @tablet-width)  {
+    top: -1959px;
+  }
+
+    @media (min-width: @desktop-width)  {
+      top: -1043px;
+  }
 }
 
 .popup--success  {
   top: -815px;
+
+  padding: 38px 0 0;
+
+  @media (min-width: @tablet-width)  {
+    top: -1485px;
+  }
+
+    @media (min-width: @desktop-width)  {
+      top: -585px;
+  }
 }
 
 .popup__title  {
@@ -55,8 +85,16 @@
   text-align: center;
 
   margin: 0;
-  margin-bottom: 37px;
+  margin-bottom: 25px;
   padding: 0;
+
+  @media (min-width: @tablet-width)  {
+    font-size: 30px;
+    line-height: 40px;
+
+    margin-bottom: 22px;
+    padding: 0 100px;
+  }
 }
 
 .popup__text  {
@@ -65,22 +103,53 @@
   text-align: center;
 
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   padding: 0;
 
   color: #283645;
+
+  @media (min-width: @tablet-width)  {
+    font-size: 18px;
+
+    margin-bottom: 33px;
+    padding: 0 70px;
+  }
+
+  @media (min-width: @desktop-width)  {
+    margin-bottom: 62px;
+    padding: 0 200px;
+  }
 }
 
 .popup__text--inner  {
-  margin-bottom: 41px;
+  margin-bottom: 34px;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width)  {
+    margin-bottom: 30px;
+    padding: 0 70px;
+  }
+
+  @media (min-width: @desktop-width)  {
+    margin-bottom: 39px;
+    padding: 0 200px;
+  }
 }
 
 .popup__bg  {
   display: flex;
   justify-content: center;
+
+  @media (min-width: @desktop-width)  {
+    background-color: #F2F2F2;
+
+    padding: 50px 0;
+  }
 }
 
 .popup__bg--inner  {
+  padding: 50px 0;
+
   background-color: #F2F2F2;
 }
 
@@ -94,8 +163,7 @@
 
   width: 280px;
 
-  margin-bottom: 52px;
-  padding: 10px;
+  padding: 17px;
 
   color: #ffffff;
   background-color: #2AAB6D;
@@ -119,8 +187,14 @@
 
     transition: 0.3s;
   }
+
+  @media (min-width: @tablet-width)  {
+    width: 300px;
+  }
 }
 
 .popup__button--inner  {
-  margin-top: 52px;
+  @media (min-width: @desktop-width)  {
+    width: 460px;
+  }
 }

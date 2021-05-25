@@ -4,7 +4,15 @@ let promoWrapper = document.querySelector('.promo__wrapper');
 let photographsWrapper = document.querySelector('.photographs__wrapper');
 let competitionWrapper = document.querySelector('.competition__wrapper');
 let priceList = document.querySelector('.price__list');
-const mediaQuery = window.matchMedia('(max-width: 659px)')
+const mediaQuery = window.matchMedia('(max-width: 659px)');
+let popupFailure = document.querySelector('.popup--failure');
+let popupSuccess = document.querySelector('.popup--success');
+const form = document.querySelector('.form');
+let submit = document.querySelector('.form__button');
+let lastName = document.getElementById('last-name');
+let firstName = document.getElementById('name');
+let mail = document.getElementById('mail');
+let okButton = document.querySelectorAll('.popup__button');
 
 navMain.classList.remove('main-nav--no-js');
 navMain.classList.add('main-nav--closed');
@@ -43,6 +51,24 @@ navToggle.addEventListener('click', function()  {
   }
 });
 
+if (form)  {
+  form.onsubmit = function(evt)  {
+    evt.preventDefault();
+    if (!(firstName.value && !!lastName.value && !!mail.value)) {
+      popupFailure.classList.add('popup--show');
+    } else  {
+      popupSuccess.classList.add('popup--show');
+    }
+  };
+
+  okButton.forEach(item =>  {
+    item.addEventListener('click', function()  {
+        popupFailure.classList.remove('popup--show');
+        popupSuccess.classList.remove('popup--show');
+    });
+  });
+}
+
 $(document).ready(function(){
   $('.slider').slick({
       dots: true,
@@ -60,9 +86,8 @@ $(document).ready(function(){
         }
       ]
   });
-});
 
-$(document).ready(function(){
+  $(document).ready(function(){
   $('.price__slider').slick({
       dots: true,
       arrows: false,
@@ -80,8 +105,6 @@ $(document).ready(function(){
       ]
   });
 
-
-
   function handleTabletChange(e) {
     if (e.matches) {
       $('.price__slider').slick('slickRemove', 0);
@@ -92,4 +115,5 @@ $(document).ready(function(){
 
   mediaQuery.addListener(handleTabletChange)
   handleTabletChange(mediaQuery)
+});
 });
