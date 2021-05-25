@@ -44,10 +44,13 @@
   flex-direction: column;
   align-items: center;
 
+  min-height: 140px;
+
   padding-top: 96px;
 
   @media (min-width: @tablet-width)  {
     width: 620px;
+    min-height: 260px;
 
     margin: 0 auto;
     padding: 0 20px;
@@ -56,6 +59,7 @@
 
   @media (min-width: @desktop-width)  {
     width: 940px;
+    min-height: 223px;
 
     padding: 0 10px;
     padding-top: 171px;
@@ -79,7 +83,6 @@
   width: 228px;
 
   margin: 0;
-  margin-bottom: 48px;
   padding: 0;
 
   color: #ffffff;
@@ -89,13 +92,9 @@
     line-height: 65px;
 
     width: 620px;
-
-    margin-bottom: 65px;
   }
 
   @media (min-width: @desktop-width)  {
     width: 747px;
-
-    margin-bottom: 93px;
   }
 }
