@@ -1246,7 +1246,7 @@ input[type="radio"].visually-hidden {
   .reviews .slick-next,
   .slick-prev {
     position: absolute;
-    top: 234px;
+    top: 35px;
     width: 22px;
     height: 41px;
     transform: translate(0, -50%);
@@ -1463,7 +1463,7 @@ input[type="radio"].visually-hidden {
 }
 @media (min-width: 1200px) {
   .price__item--tablet {
-    margin-top: 98px;
+    margin-top: 100px;
   }
 }
 .price__table {
