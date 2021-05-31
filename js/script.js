@@ -69,8 +69,8 @@ if (form)  {
   });
 }
 
-$(document).ready(function(){
-  $('.slider').slick({
+$(document).ready(function() {
+  $('.slider').slick( {
       dots: true,
       arrows: false,
       draggable: true,
@@ -86,9 +86,10 @@ $(document).ready(function(){
         }
       ]
   });
+});
 
-  $(document).ready(function(){
-  $('.price__slider').slick({
+$(document).ready(function() {
+  $('.price__slider').slick( {
       dots: true,
       arrows: false,
       draggable: true,
@@ -99,8 +100,8 @@ $(document).ready(function(){
       mobileFirst: true,
       responsive: [
         {
-           breakpoint: 660,
-           settings: 'unslick'
+            breakpoint: 660,
+            settings: 'unslick'
         }
       ]
   });
@@ -115,5 +116,4 @@ $(document).ready(function(){
 
   mediaQuery.addListener(handleTabletChange)
   handleTabletChange(mediaQuery)
-});
 });
