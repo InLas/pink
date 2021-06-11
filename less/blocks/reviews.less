@@ -16,22 +16,13 @@
   display: flex;
   justify-content: center;
 
-  width: 280px;
-
-  padding: 0 20px;
   padding-top: 41px;
-  margin: 0 auto;
 
   @media (min-width: @tablet-width)  {
-    width: 620px;
-
     padding-top: 92px;
   }
 
   @media (min-width: @desktop-width)  {
-    width: 940px;
-
-    padding: 0 10px;
     padding-top: 185px;
   }
 }
@@ -71,9 +62,9 @@
   font-weight: 700;
   text-align: center;
 
-  padding: 0;
   margin: 0;
   margin-bottom: 13px;
+  padding: 0;
 
   @media (min-width: @tablet-width)  {
     font-size: 20px;
@@ -97,9 +88,9 @@
   line-height: 30px;
   text-align: center;
 
-  padding: 0;
   margin: 0;
   margin-bottom: 50px;
+  padding: 0;
 
   @media (min-width: @tablet-width)  {
     font-size: 18px;
@@ -125,9 +116,9 @@
 
     display: inline;
 
-    padding: 0;
     margin: 0;
     margin-bottom: 25px;
+    padding: 0;
 
     order: 1;
 
@@ -137,9 +128,9 @@
   @media (min-width: @desktop-width)  {
     font-size: 18px;
 
-    padding: 0;
     margin: 0;
     margin-bottom: 24px;
+    padding: 0;
 
     color: #283645;
   }
@@ -173,6 +164,7 @@
 
   width: 12px;
   height: 12px;
+
   padding: 5px;
 
   background: transparent;
@@ -198,6 +190,7 @@
 
   background-color: #283645;
   border-radius: 50%;
+  transition: 0.3s;
 
   @media (min-width: @tablet-width)  {
     background-color: #ffffff;
@@ -208,8 +201,6 @@
 .slick-dots li button:hover::before,
 .slick-dots li button:focus::before  {
   opacity: 1;
-
-  transition: 0.3s;
 }
 
 .reviews
@@ -267,19 +258,16 @@
       height: 41px;
 
       opacity: 0.3;
+      transition: 0.3s;
     }
 
     &:hover::before,
     &:focus::before  {
       opacity: 1;
-
-      transition: 0.3s;
     }
 
     &:active::before  {
       opacity: 0.1;
-
-      transition: 0.3s;
     }
   }
 }

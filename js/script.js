@@ -1,6 +1,6 @@
 let navMain = document.querySelector('.main-nav');
 let navToggle = document.querySelector('.main-nav__toggle');
-let promoWrapper = document.querySelector('.promo__wrapper');
+let sloganWrapper = document.querySelector('.slogan__wrapper');
 let photographsWrapper = document.querySelector('.photographs__wrapper');
 let competitionWrapper = document.querySelector('.competition__wrapper');
 let priceList = document.querySelector('.price__list');
@@ -29,8 +29,8 @@ navToggle.addEventListener('click', function()  {
 
 navToggle.addEventListener('click', function()  {
   if (navMain.classList.contains('main-nav--opened'))  {
-    if (promoWrapper)  {
-      promoWrapper.classList.add('promo__wrapper--js');
+    if (sloganWrapper)  {
+      sloganWrapper.classList.add('slogan__wrapper--js');
     }
     if (photographsWrapper)  {
       photographsWrapper.classList.add('photographs__wrapper--js');
@@ -39,8 +39,8 @@ navToggle.addEventListener('click', function()  {
       competitionWrapper.classList.add('competition__wrapper--js');
     }
   } else {
-    if (promoWrapper)  {
-      promoWrapper.classList.remove('promo__wrapper--js');
+    if (sloganWrapper)  {
+      sloganWrapper.classList.remove('slogan__wrapper--js');
     }
     if (photographsWrapper)  {
       photographsWrapper.classList.remove('photographs__wrapper--js');
