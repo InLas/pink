@@ -1493,6 +1493,9 @@ input[type="radio"].visually-hidden {
     font-size: 24px;
   }
 }
+.price__bg {
+  background-color: #ffffff;
+}
 .price__check {
   font-size: 14px;
   line-height: 30px;
@@ -1502,7 +1505,6 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
   padding: 12px 0 17px 20px;
   margin: 0;
-  background-color: #ffffff;
   border: 2px solid #E5E5E5;
 }
 @media (min-width: 660px) {
@@ -3347,6 +3349,9 @@ input[type="radio"].visually-hidden {
   border-radius: 3px;
   outline: none;
   transition: 0.3s;
+}
+.contact-details__input--fail {
+  border: 2px solid #D22856;
 }
 .contact-details__input::-moz-placeholder {
   color: #283645;
